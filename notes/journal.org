@@ -19,3 +19,10 @@ Notes on CV setup, maintenance and updates.
 :END:
 - [[#up][Up]]
 - [[#description][Description]]
+- [[#2020-10-01-version-v10][2020-10-01 Version v1.0]]
+
+* 2020-10-01 Version v1.0
+:PROPERTIES:
+:CUSTOM_ID: h-1D02D123-8FD5-43FD-887C-662B7B53EEB6
+:END:
+Used until ~2021.

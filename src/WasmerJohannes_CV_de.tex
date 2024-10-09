@@ -1,0 +1,204 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+\usepackage[ngerman]{babel}   % deutschsprachige Bezuege, vor babel zu
+                                % laden
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\usepackage{setspace}           %for paragraphing cv sections:
+                                %wrap section lines in {\setstretch{0.6} ... }
+                                %insert empty cvline/cventry/... between
+                                %paragraphs
+
+
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Johannes}
+\familyname{Wasmer}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Rütscher Str. 155 Z.0102}{DE-52072 Aachen}    % optional, remove the line if not wanted
+\mobile{+49 151 5650 8795}                    % optional, remove the line if not wanted
+%\phone{+49 241 8098 019}                      % optional, remove the line if not wanted
+%\fax{07754 91086}                          % optional, remove the line if not wanted
+\email{johannes.wasmer@gmail.com}
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{picture_64pt.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+\social[linkedin][linkedin.com/in/johannes-wasmer-359749126/]{johannes-wasmer}
+\social[github][github.com/Irratzo]{Irratzo}
+\social[twitter]{JohannesWasmer}
+
+%\nopagenumbers{}                             % uncomment to suppress
+%automatic page numbering for CVs longer than one page
+
+%fuer C++ Name
+\def\SymboCpp{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+
+%use inside document if needed:
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+\maketitle
+
+%cventry: % arguments 3 to 6 are optional
+
+\section{Bildungsweg}
+
+\cventry{2017/10 --
+  2021/10}{\href{https://www.aices.rwth-aachen.de/en/academics/masters-program-simulation-sciences}{Simulation
+    Sciences MSc}}{RWTH}{Aachen}{}{Individueller Schwerpunkt auf
+  datengetriebener Materialwissenschaft. Betreuer der Abschlussarbeit
+  \href{https://www.fz-juelich.de/SharedDocs/Personen/PGI/PGI-1/EN/Bluegel_S.html}{Prof.
+    Dr. Stefan Blügel of PGI-1/IAS-1}. Abschlussarbeit: \glqq{}Entwicklung eines
+  Ersatzmodells aus dem Maschinellen Lernen zur Beschleunigung von
+  Dichtefunktional-Rechnungen mit der Korringa-Kohn-Rostoker-Methode\grqq{}.}
+
+\cventry{2014/09 -- 2017/10}
+{\href{https://www.fh-aachen.de/studium/angewandte-mathematik-und-informatik-bsc/}{Scientific Programming BSc}}{\href{https://www.fh-aachen.de/}{FH Aachen}}{Jülich/Aachen}{\textit{Note 2,1}}
+{Duales Studium, kombiniert mit dem Ausbildungsberuf
+  \glqq{}\href{http://www.itc.rwth-aachen.de/cms/IT-Center/Lehre-Ausbildung/~letj/MATSE-Ausbildung/}{Mathematisch-Technischer
+    Softwareentwickler (MATSE)}\grqq{}. Ausbildung beim unabhängigen
+  Forschungszentrum \href{http://www.zuse-gemeinschaft.de/institute/company/36-access-e-v}{Access
+    e.V., Aachen}. Abschlussarbeit: \glqq{}Umstellung auf JavaFX und
+  Erweiterung um ein Tool zur statistischen Datenanalyse einer
+  Simulationsverwaltungs-Software\grqq{} (MySQL, Hibernate, Java 8).}
+
+\cventry{2004 -- 2014}{Verschiedene}{\href{https://www.tum.de/}{TU München}, \href{https://www.ethz.ch/de.html}{ETH Zürich}}{}{\textit{ohne Abschluss}}{Studien in Natur-, Material-, und Rechnergestützen Wissenschaften. Kein Abschluss aufgrund einer 2013/2014 diagnostizierten und behandelten Depression.}
+\cventry{1995 -- 2004}{Abitur}{Hochrhein-Gymnasium}{Waldshut (BW)}{\textit{Note 2,1}}{Allgemeine Hochschulreife.}
+
+
+\section{Berufserfahrung}
+
+% \cventry{duration}{occupation}{company}{location}{empty}{description}
+
+\cventry{2018/08 -- 2018/10}{Praktikum}{Jülich Supercomputing
+  Centre}{\href{https://www.fz-juelich.de}{Forschungszentrum
+    Jülich}}{}{\href{https://www.fz-juelich.de/ias/jsc/EN/Career/Gueststudentprogramme/gsp_node.html}{Gaststudierendenprogramm
+    2018}. Ich implementierte ein neues Visualisierungs-Plugin für das Performanzanalyse-Tool
+  \href{https://www.vi-hps.org/tools/cube.html}{Cube}
+  für parallele Programme (\SymboCpp{}14, Qt 5).}
+
+\cventry{2017/10 -- 2018/09}{Sudentische
+  Hilfskraft}{\href{https://www.zuse-gemeinschaft.de/institute/company/36-access-e-v}{Access
+    e.V.}}{Aachen}{}{Erstellung von Datenkonvertern als Bestandteil eines
+  HDF5-Datenaustauschformats für das Projekt \glqq{}\href{aixvipmap.de}{Aachen
+    Virtual Platform for Materials Processing}\grqq{} (Python3).}{}
+
+\cventry{2012/03 -- 2014/08}{Freier Journalist}{\href{http://www.suedkurier-medienhaus.de/}{Südkurier GmbH Medienhaus}}{Bad Säckingen}{{\small \href{https://www.suedkurier.de/services/info/Kontakt-Bad-Saeckingen;art1015385,4792765}{Redaktion Bad Säckingen}}}{}
+
+% \cventry{2003 -- 2012}{Produktionshelfer}{\href{http://www.franke-personalservice.de/}{Franke Personalservice
+%   e.K.}}{Laufenburg}{}{{\small Ferienjobs.}}{}
+
+% \pagebreak
+
+\section{IT-Kenntnisse}
+{\setstretch{0.55}
+  \cvcomputer{\scriptsize{Betriebssysteme}}{Linux, Windows}{\scriptsize{Office}}{MS Office, \LaTeX2e, LibreOffice}
+  \cvcomputer{}{}{}{}
+  \cvcomputer{{\scriptsize Programmier-}}{Python, \SymboCpp{}, Java 8 -- {\scriptsize\emph{fortgeschritten}}}{\scriptsize{APIs/}}{{\normalsize} JavaFX/Qt, MPI/OpenMP/CUDA,}
+  \cvcomputer{{\scriptsize sprachen}}{Javascript -- {\scriptsize\emph{Anfänger}}}{{\scriptsize Bibliotheken}}{np/pd/tf, Hibernate/Spring}
+  \cvcomputer{}{}{}{}
+  \cvcomputer{{\scriptsize Datenhaltung}}{SQL, XML -- {\scriptsize\emph{intermediär}}}{{\scriptsize Web}}{HTML/CSS  -- {\scriptsize\emph{Anfänger}}}
+  \cvcomputer{}{RDF, MR/Spark  -- {\scriptsize\emph{Anfänger}}}{}{}
+  \cvcomputer{}{}{}{}
+  \cvcomputer{{\scriptsize Dev Tools/}}{Emacs/IDEs/Jupyter, VCS,}{{\scriptsize Multimedia}}{Gimp, Inkscape, Audacity (Audio),}
+  \cvcomputer{{\scriptsize Methoden}}{CMake/Gradle/Maven}{}{Kdenlive (Video) -- {\scriptsize\emph{Anfänger}}}
+}
+
+\pagebreak
+
+% \section{Master thesis}
+% \cvline{title}{\emph{Title}}
+% \cvline{supervisors}{Supervisors}
+% \cvline{description}{\small Short thesis abstract}
+
+\section{Sprachen}
+
+\cvlanguage{Deutsch}{\href{http://www.europaeischer-referenzrahmen.de/}{C2 CEFR}}{\href{http://www.europaeischer-referenzrahmen.de/}{Muttersprache}}
+\cvlanguage{Englisch}{\href{http://www.europaeischer-referenzrahmen.de/}{C1
+    CEFR}}{\href{http://www.europaeischer-referenzrahmen.de/}{fachkundige Sprachkenntnisse (TOEFL iBT 2017: 110 von 120 Punkten)}}
+\cvlanguage{Französisch}{\href{http://www.europaeischer-referenzrahmen.de/}{A2 CEFR}}{\href{http://www.europaeischer-referenzrahmen.de/}{elementare Sprachverwendung}}
+
+%\section{Pflege- und Assistenzerfahrung}
+%\cvline{Pflege}{In den letzten 5 Jahren unterstützte ich meine Eltern bei der Pflege meines Großvaters und meiner Großtante zuhause. In dieser Zeit waren beide auf einen Rollstuhl angewiesen.}
+
+%\newpage
+
+\section{Freizeit}
+
+{\setstretch{0.6} \cvline{Gremien-}{2018-2020 Wohnheimssprecher des
+    Studierenden-Wohnheims / -Vereins
+    \href{https://www.oph.rwth-aachen.de}{Otto-Petersen-}}
+  \cvline{tätigkeit}{\href{https://www.oph.rwth-aachen.de}{Haus e.V.} mit 200
+    Bewohnern/Mitgliedern. Die Selbstverwaltung besitzt und betreut das
+    Hausnetzwerk, Waschmaschinen, verschiedene Arbeitsgruppen, und unterstützt
+    die Organisation zweier traditionsreicher Events, die zu den größten
+    studentisch organisierten Events in Aachen zählen. Wohnheimssprecher leiten
+    die Verwaltung und dienen als Hauptansprechpartner für Alle inner- und
+    außerhalb des Wohnheims. Mein größter Erfolg in
+    diesem Amt war die Umwandlung der Selbstverwaltung in einen eingetragenen, gemeinnützigen Verein.}
+  \cvline{Öffentlich-}{2015
+    Aktivmitglied der in Aachen basierten
+    \href{https://www.energybirds.org/}{Studenteninitivative Energybirds e.V.}
+    zur} \cvline{keitsarbeit}{Förderung von nachhaltiger Energietechnik.}
+  \cvline{}{} \cvline{Musik}{1999-2015 Dirigent, Ausbilder und Aktivmitglied in
+    verschiedenen Musikvereinen, Orchestern und Ensembles.} }
+%\cvline{hobby 2}{\small Description}
+
+
+
+
+
+
+% \section{Sonstige Qualifikation}
+% \cvlistitem{Gabelstapler-Führerschein}
+%\cvlistitem{}
+%\cvlistitem{}            % optional other symbol
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
