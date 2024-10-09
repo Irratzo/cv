@@ -19,11 +19,17 @@ Notes on CV setup, maintenance and updates.
 :END:
 - [[#up][Up]]
 - [[#description][Description]]
+- [[#2023-02-08-version-v13][2023-02-08 Version v1.3]]
 - [[#2022-01-19-version-v12][2022-01-19 Version v1.2]]
 - [[#2021-06-15-version-v11][2021-06-15 Version v1.1]]
   - [[#update-section-skills-22][Update section Skills]]
 - [[#2020-10-01-version-v10][2020-10-01 Version v1.0]]
 
+* 2023-02-08 Version v1.3
+:PROPERTIES:
+:CUSTOM_ID: h-B608DA03-C9C8-4E8D-824F-C41E9F1FBEA2
+:END:
+Added new profile picture.
 * 2022-01-19 Version v1.2
 :PROPERTIES:
 :CUSTOM_ID: h-78AB840B-E15B-4E9D-BA5A-6F286B139948
