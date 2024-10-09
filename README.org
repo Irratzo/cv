@@ -5,5 +5,6 @@ Variants.
 
 - [[file:variants/latex-simple/WasmerJohannes_CV_en.pdf][latex-simple-en]]
 - [[file:variants/latex-simple/WasmerJohannes_CV_de.pdf][latex-simple-de]]
+- [[file:variants/linkedin-export/WasmerJohannes_CV_LinkedIn.pdf][linkedin-export]]
 
 * [[file:notes/journal.org][Journal]]
