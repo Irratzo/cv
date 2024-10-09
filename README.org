@@ -1,4 +1,7 @@
 * CV
 Curriculum vitae of Johannes Wasmer.
 
+- [[file:src/WasmerJohannes_CV_en.pdf][CV en]]
+- [[file:src/WasmerJohannes_CV_de.pdf][CV de]]
+
 * [[file:notes/journal.org][Journal]]
