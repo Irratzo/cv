@@ -19,12 +19,78 @@ Notes on CV setup, maintenance and updates.
 :END:
 - [[#up][Up]]
 - [[#description][Description]]
+- [[#202x-xx-xx-academic-cv][202x-xx-xx Academic CV]]
+- [[#2024-10-09-version-v14][2024-10-09 Version v1.4]]
 - [[#2023-02-08-version-v13][2023-02-08 Version v1.3]]
 - [[#2022-01-19-version-v12][2022-01-19 Version v1.2]]
 - [[#2021-06-15-version-v11][2021-06-15 Version v1.1]]
   - [[#update-section-skills-22][Update section Skills]]
 - [[#2020-10-01-version-v10][2020-10-01 Version v1.0]]
 
+* TODO 202x-xx-xx Academic CV
+:PROPERTIES:
+:CUSTOM_ID: h-028A566A-03A9-4C6E-AC4F-B4F3C0ADAA32
+:END:
+<2024-04-16 Tue> got to have an academic version of my CV at some point.
+
+Idea. Reuse old CV and just add relevant academic sections. Eg Publications,
+Teaching Experience.
+
+Some tips and templates.
+
+- career.arizona.edu. Academic Curriculum Vitae (CV) Example and Writing Tips. 2022. [[https://career.arizona.edu/blog/2022/06/06/academic-curriculum-vitae-cv-example-and-writing-tips/][URL]].
+  - Some examples of what I could add.
+
+    #+begin_quote
+    Academic Curriculum Vitae Format [...]
+
+    FELLOWSHIPS / GRANTS List internships and fellowships, including
+    organization, title, and dates. Also include any grants you have been given.
+    Depending on your field, you might include the amount of money awarded for
+    each grant.
+
+    CONFERENCES / TALKS List any presentations (including poster presentations)
+    or invited talks that you have given. Also list any conferences or panels
+    that you have organized.
+
+    PUBLICATIONS / BOOKS Include any publications, including books, book
+    chapters, articles, book reviews, and more. Include all of the information about
+    each publication, including the title, journal title, date of publication, and
+    (if applicable) page numbers.
+    #+end_quote
+- grad.illinois.edu. Curriculum Vitae Tips and Samples (PDF). [[https://grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf][URL]].
+  - Some examples of what I could add. [[https://grad.illinois.edu/sites/default/files/pdfs/cvsamples.pdf#page=3][page 3]].
+    #+begin_quote
+    TEACHING & ADVISING
+    Teaching Assistant 20xx-20xx
+
+    RESEARCH EXPERIENCE
+    Doctoral Researcher 20xx-20xx
+
+    Research Assistant 20xx
+
+    PUBLICATIONS
+
+    CONFERENCE PRESENTATIONS
+
+    HONORS AND AWARDS
+
+    PROFESSIONAL SERVICE
+
+    REFERENCES
+    SB, PR
+    #+end_quote
+- Academic CV LateX templates
+  - [[https://www.google.com/search?client=firefox-b-d&q=academic+cv+latex+template][gsearch]]
+  - [[https://www.overleaf.com/latex/examples/academic-cv-template/hvjpfjnyggbf][overleaf]]
+  - [[https://raphink.info/][this is cool]]
+  - some academic cvs on github, simple [[https://github.com/Mamunia/cv][1]], [[https://github.com/arasgungore/arasgungore-CV][2]]; fancy [[https://github.com/alessant/ALECS---Another-LatEx-Cv-for-Scientists][2]]
+
+* 2024-10-09 Version v1.4
+:PROPERTIES:
+:CUSTOM_ID: h-4C2AF312-52DA-4B2D-A857-5B648BD2297E
+:END:
+For Microsoft Research internship opening.
 * 2023-02-08 Version v1.3
 :PROPERTIES:
 :CUSTOM_ID: h-B608DA03-C9C8-4E8D-824F-C41E9F1FBEA2
