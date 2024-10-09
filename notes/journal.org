@@ -19,24 +19,24 @@ Notes on CV setup, maintenance and updates.
 :END:
 - [[#up][Up]]
 - [[#description][Description]]
-- [[#202x-xx-xx-latex-academic-v10][202x-xx-xx latex-academic v1.0]]
-- [[#202x-xx-xx-try-external-linkedin-cv-exporters-0][202x-xx-xx Try external LinkedIn CV exporters]]
-- [[#2024-10-09-linkedin-export-v10-66][2024-10-09 linkedin-export v1.0]]
-- [[#2024-10-09-latex-simple-v14-24][2024-10-09 latex-simple v1.4]]
-- [[#2023-02-08-latex-simple-v13][2023-02-08 latex-simple v1.3]]
-- [[#2022-01-19-latex-simple-v12][2022-01-19 latex-simple v1.2]]
-- [[#2021-06-15-latex-simple-v11][2021-06-15 latex-simple v1.1]]
+- [[#202x-xx-xx-latex-academic-v10][202x-xx-xx latex-academic-v1.0]]
+- [[#202x-xx-xx-try-external-linkedin-cv-exporters-06][202x-xx-xx Try external LinkedIn CV exporters]]
+- [[#2024-10-09-linkedin-export-v10-66][2024-10-09 linkedin-export-v1.0]]
+- [[#onhold-2024-10-09-latex-simple-v14-24][ONHOLD 2024-10-09 latex-simple-v1.4]]
+- [[#2023-02-08-latex-simple-v13][2023-02-08 latex-simple-v1.3]]
+- [[#2022-01-19-latex-simple-v12][2022-01-19 latex-simple-v1.2]]
+- [[#2021-06-15-latex-simple-v11][2021-06-15 latex-simple-v1.1]]
   - [[#update-section-skills-22][Update section Skills]]
-- [[#2020-10-01-latex-simple-v10][2020-10-01 latex-simple v1.0]]
+- [[#2020-10-01-latex-simple-v10][2020-10-01 latex-simple-v1.0]]
 
-* TODO 202x-xx-xx latex-academic v1.0
+* TODO 202x-xx-xx latex-academic-v1.0
 :PROPERTIES:
 :CUSTOM_ID: h-028A566A-03A9-4C6E-AC4F-B4F3C0ADAA32
 :END:
 <2024-04-16 Tue> got to have an academic version of my CV at some point.
 
-Idea. Reuse old CV and just add relevant academic sections. Eg Publications,
-Teaching Experience.
+Idea. Reuse old CV variant latex-simple and just add relevant academic sections.
+Eg Publications, Teaching Experience.
 
 Some tips and templates.
 
@@ -88,7 +88,7 @@ Some tips and templates.
   - [[https://raphink.info/][this is cool]]
   - some academic cvs on github, simple [[https://github.com/Mamunia/cv][1]], [[https://github.com/arasgungore/arasgungore-CV][2]]; fancy [[https://github.com/alessant/ALECS---Another-LatEx-Cv-for-Scientists][2]]
 
-* TODO 202x-xx-xx Try external LinkedIn CV exporters [0/]
+* TODO 202x-xx-xx Try external LinkedIn CV exporters [0/6]
 :PROPERTIES:
 :CUSTOM_ID: h-93B0DB3D-E167-48AE-9F1F-A9EBF4CEEAB1
 :END:
@@ -100,7 +100,7 @@ Alternatives for LinkedIn CV export (not tried).
 - [ ] [[https://www.resumonk.com/resume-builder/help/import-from-linkedin][resumonk.com]]
 - [ ] [[https://www.rezi.ai/linkedin-resume-builder][rezi.ai]]
 - [ ] [[https://www.visualcv.com/linkedin-resume-builder/][visualcv.com]]
-* 2024-10-09 linkedin-export v1.0 [6/6]
+* 2024-10-09 linkedin-export-v1.0 [6/6]
 :PROPERTIES:
 :CUSTOM_ID: h-F5195136-D3A1-4D36-A421-8343C563F735
 :END:
@@ -115,7 +115,7 @@ On LinkedIn profile.
 - [X] Add section Volunteering, copy from CV "Personal Interests"
 - [X] Generate PDF via profile - Resources - Save to PDF.
 - [X] Save in =variants/linkedin-export/=.
-* 2024-10-09 latex-simple v1.4 [2/4]
+* ONHOLD 2024-10-09 latex-simple-v1.4 [2/4]
 :PROPERTIES:
 :CUSTOM_ID: h-4C2AF312-52DA-4B2D-A857-5B648BD2297E
 :END:
@@ -129,19 +129,19 @@ On LinkedIn profile.
   | Personal Interests | Volunteering   |
 - [ ] Sync section entries with LinkedIn profile
 - [ ] Add new stuff
-* 2023-02-08 latex-simple v1.3
+* 2023-02-08 latex-simple-v1.3
 :PROPERTIES:
 :CUSTOM_ID: h-B608DA03-C9C8-4E8D-824F-C41E9F1FBEA2
 :END:
 Added new profile picture.
-* 2022-01-19 latex-simple v1.2
+* 2022-01-19 latex-simple-v1.2
 :PROPERTIES:
 :CUSTOM_ID: h-78AB840B-E15B-4E9D-BA5A-6F286B139948
 :END:
 Note on optional inclusion of signature. The image (file =signature2.png=) and
 compiled PDF with signature is not stored in this repository, but locally, in
 =../repo-name-local/src=. Compile there, if needed.
-* 2021-06-15 latex-simple v1.1
+* 2021-06-15 latex-simple-v1.1
 :PROPERTIES:
 :CUSTOM_ID: h-1E954732-BF3E-4FF0-9477-A3B1E14D2949
 :END:
@@ -174,7 +174,7 @@ References for using TikZ (unused).
 - https://github.com/xiaohanyu/awesome-tikz
   - https://github.com/FriendlyUser/LatexDiagrams
   - https://github.com/walmes/Tikz
-* 2020-10-01 latex-simple v1.0
+* 2020-10-01 latex-simple-v1.0
 :PROPERTIES:
 :CUSTOM_ID: h-1D02D123-8FD5-43FD-887C-662B7B53EEB6
 :END:
