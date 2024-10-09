@@ -19,8 +19,43 @@ Notes on CV setup, maintenance and updates.
 :END:
 - [[#up][Up]]
 - [[#description][Description]]
+- [[#2021-06-15-version-v11][2021-06-15 Version v1.1]]
+  - [[#update-section-skills-22][Update section Skills]]
 - [[#2020-10-01-version-v10][2020-10-01 Version v1.0]]
 
+* 2021-06-15 Version v1.1
+:PROPERTIES:
+:CUSTOM_ID: h-1E954732-BF3E-4FF0-9477-A3B1E14D2949
+:END:
+** Update section Skills [2/2]
+:PROPERTIES:
+:CUSTOM_ID: h-114CD471-9641-4BF9-9587-59CE83A656E6
+:END:
+skills timeflow
+
+Changelog.
+
+- [X] update table here from CV
+- [X] use org table as source for output to tex (manual adjustments) and markdown (github about-me).
+
+| Time                 | Languages         | Libraries                                                                     | Tools                                                                                       | Product / Application                                          |
+|----------------------+-------------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+----------------------------------------------------------------|
+| 2020-2021 Thesis     | Python            | AiiDA, JuKKR (DFT code), ASE, Pymatgen, Bokeh, Scikit-learn, DScribe          | GitHub/GitLab CI/CD, RTD, Poetry, Pytest, Slurm, Screen                                     | Machine learning potentials for DFT                            |
+| 2017-2020 Coursework | Python, C         | Tensorflow, Keras, MPI, OpenMP, CUDA                                          | Google Colaboratory, Comet.ml, MATLAB, Vtk                                                  | Neural networks, Numerical solvers                             |
+| 2019 Student life    | Shell, Javascript | MongoDB, Meteor                                                               | Pandoc, Wiki, Docker                                                                        | Event organizer, student Wiki                                  |
+| 2018 Student project | Modern C++        | Template Programming / OO, Qt5, Googletest                                    | CMake, Git, TiKZ, CLion                                                                     | Treemapping, Cube (performance explorer)                       |
+| 2018 Student project | Python            | Introspection / OO, Ipywidgets (dashboarding), Matplotlib, Tkinter            | Jupyter                                                                                     | Bandstructure visualizer                                       |
+| 2017-2018 Work       | Python            | HDF5 (container), Numpy, Pandas, RDF/OWL (ontology)                           | Conda, Protégé, PyCharm                                                                     | MICRESS (Microstructure simulation), AiXViPMaP (ICME platform) |
+| 2014-2017 Apprentice | Java8             | DI / MVVM (Design Patterns), JavaFX (GUI), Hibernate (ORM), XML, Batch script | Maven, Gradle, Xampp, SVN, Trello, Putty, Cygwin, Eclipse, Netbeans, Windows, LaTeX, Office | DB Manager, Star-CCM+ (Fluid dynamics)                         |
+| 2014-2017 Coursework | C++, Javascript   | JQuery, LAMMPS                                                                | LaTeX, VMD                                                                                  | course projects, MD simulations                                |
+| Before 2014          | Shell, C++        | None                                                                          | GROMACS, Audacity, Gimp, Kdenlive                                                           | Art                                                            |
+| All the time         | (Lisp)            | (Lisp)                                                                        | Emacs, Org-mode, Babel                                                                      | Note-taking                                                    |
+
+References for using TikZ (unused).
+
+- https://github.com/xiaohanyu/awesome-tikz
+  - https://github.com/FriendlyUser/LatexDiagrams
+  - https://github.com/walmes/Tikz
 * 2020-10-01 Version v1.0
 :PROPERTIES:
 :CUSTOM_ID: h-1D02D123-8FD5-43FD-887C-662B7B53EEB6

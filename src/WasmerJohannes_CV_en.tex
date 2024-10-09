@@ -23,8 +23,18 @@
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 \usepackage{setspace}           %for paragraphing cv sections:
                                 %wrap section lines in {\setstretch{0.6} ... }
-                                %insert empty cvline/cventry/... between paragraphs
+                                %insert empty cvline/cventry/... between
+                                %paragraphs
+\usepackage{makecell}           %for manual linebreaks within table cells,
+                                % reference:
+                                % https://tex.stackexchange.com/a/176780
+\usepackage{array}
 
+% redefine moderncv section bar color, called 'color1'.
+% reference: https://stackoverflow.com/a/64538448/8116031
+\usepackage{xcolor}
+\definecolor{nomadblue}{HTML}{00B7FD}
+\colorlet{color1}{nomadblue}
 
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -42,7 +52,7 @@
 \photo[64pt]{picture_64pt.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Some quote (optional)}                 % optional, remove the line if not wanted
 \social[linkedin][linkedin.com/in/johannes-wasmer-359749126/]{johannes-wasmer}
-\social[github][https://github.com/Irratzo/about-myself/blob/master/README.md]{Irratzo}
+\social[github][github.com/Irratzo/about-myself/blob/master/README.md]{Irratzo}
 \social[twitter]{JohannesWasmer}
 
 %\nopagenumbers{}                             % uncomment to suppress
@@ -50,6 +60,7 @@
 
 %fuer C++ Name
 \def\SymboCpp{C\raisebox{0.5ex}{\tiny\textbf{++}}}
+% \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 
 %use inside document if needed:
 %\renewcommand{\listitemsymbol}{-} % change the symbol for lists
@@ -102,7 +113,7 @@
     Jülich}}{}{\href{https://www.fz-juelich.de/ias/jsc/EN/Career/Gueststudentprogramme/gsp_node.html}{Guest
     student programme 2018}. I implemented a new visualization plugin for the performance analysis tool
   \href{https://www.vi-hps.org/tools/cube.html}{Cube}
-  for parallel programs (\SymboCpp{}14, Qt 5).}
+  for parallel programs (\SymboCpp{} 14, Qt 5).}
 
 \cventry{2017/10 -- 2018/09}{Sudent
   assistant}{\href{http://www.access.rwth-aachen.de/}{Access e.V.}}{Aachen}{}{1)
@@ -112,37 +123,75 @@
 \cventry{2012/03--2014/08}{Freelance journalist}{\href{http://www.suedkurier-medienhaus.de/}{Südkurier GmbH Medienhaus}}{Bad Säckingen}{}{{\small At \href{https://www.suedkurier.de/services/info/Kontakt-Bad-Saeckingen;art1015385,4792765}{city desk Bad Säckingen}.}}{}
 
 % \cventry{2003--2012}{Production assistant}{Franke Personalservice
-%   e.K.}{Laufenburg}{}{Holiday jobs in various companies.}{}
-
-% \pagebreak
-
-\section{IT Skills}
-{\setstretch{0.6}
-  \cvcomputer{\scriptsize{OS}}{Linux, Windows}{\scriptsize{Office}}{MS Office, \LaTeX2e, LibreOffice}
-  \cvcomputer{}{}{}{}
-  \cvcomputer{{\scriptsize Programming}}{Python, \SymboCpp{}, Java 8 -- {\scriptsize\emph{advanced}}}{\scriptsize{APIs/}}{{\normalsize}
-    JavaFX/Qt, MPI/OpenMP/CUDA,}
-  \cvcomputer{{\scriptsize languages}}{Javascript -- {\scriptsize\emph{beginner}}}{{\scriptsize libraries}}{np/pd/tf, Hibernate/Spring}
-  \cvcomputer{}{}{}{}
-  \cvcomputer{{\scriptsize data handling}}{SQL, XML -- {\scriptsize\emph{intermediary}}}{{\scriptsize Web}}{HTML, CSS  -- {\scriptsize\emph{beginner}}}
-  \cvcomputer{}{RDF, MR/Spark -- {\scriptsize\emph{beginner}}}{}{}
-  \cvcomputer{}{}{}{}
-  \cvcomputer{{\scriptsize Dev tools/}}{Emacs/IDEs/Jupyter, VCS,}{{\scriptsize Multimedia}}{Gimp/Inkscape, Audacity (Audio),}
-  \cvcomputer{{\scriptsize methods}}{CMake/Gradle/Maven}{}{Kdenlive (Video) -- {\scriptsize\emph{beginner}}}
-}
-
-\pagebreak
-
-%\section{Master thesis}
-%\cvline{title}{\emph{Title}}
-%\cvline{supervisors}{Supervisors}
-%\cvline{description}{\small Short thesis abstract}
+% e.K.}{Laufenburg}{}{Holiday jobs in various companies.}{}
 
 \section{Languages}
 
 \cvlanguage{German} {\href{https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions}{C2 CEFR}}{mother tongue}
 \cvlanguage{English}{\href{https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions}{C1 CEFR}}{proficient usage, TOEFL iBT 2017: 110 out of 120 points}
 \cvlanguage{French} {\href{https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions}{A2 CEFR}}{basic usage}
+
+
+\pagebreak
+
+\section{IT Skills}
+% {\setstretch{0.6}
+%   \cvcomputer{\scriptsize{OS}}{Linux, Windows}{\scriptsize{Office}}{MS Office, \LaTeX2e, LibreOffice}
+%   \cvcomputer{}{}{}{}
+%   \cvcomputer{{\scriptsize Programming}}{Python, \SymboCpp{}, Java 8 -- {\scriptsize\emph{advanced}}}{\scriptsize{APIs/}}{{\normalsize}
+%     JavaFX/Qt, MPI/OpenMP/CUDA,}
+%   \cvcomputer{{\scriptsize languages}}{Javascript -- {\scriptsize\emph{beginner}}}{{\scriptsize libraries}}{np/pd/tf, Hibernate/Spring}
+%   \cvcomputer{}{}{}{}
+%   \cvcomputer{{\scriptsize data handling}}{SQL, XML -- {\scriptsize\emph{intermediary}}}{{\scriptsize Web}}{HTML, CSS  -- {\scriptsize\emph{beginner}}}
+%   \cvcomputer{}{RDF, MR/Spark -- {\scriptsize\emph{beginner}}}{}{}
+%   \cvcomputer{}{}{}{}
+%   \cvcomputer{{\scriptsize Dev tools/}}{Emacs/IDEs/Jupyter, VCS,}{{\scriptsize Multimedia}}{Gimp/Inkscape, Audacity (Audio),}
+%   \cvcomputer{{\scriptsize methods}}{CMake/Gradle/Maven}{}{Kdenlive (Video) -- {\scriptsize\emph{beginner}}}
+% }
+
+\setlength{\tabcolsep}{5pt}
+\begin{center}
+  \resizebox{\textwidth}{!}{%
+    % % simple table
+    % \begin{tabular}{lllll}
+    % % table with word-wrap
+    % \begin{tabular}{p{0.13\linewidth} p{0.11\linewidth} p{0.22\linewidth} p{0.2\linewidth} p{0.25\linewidth}} % 0.23 + 0.11 + 0.22 + 0.2 + 0.25 = 0.33 + 0.67 = 1.0
+    % % table with word-wrap, and prevent word breaks in specified columns. Allow individual cell linebreaks with \makecell.
+    \begin{tabular}{p{0.13\linewidth} p{0.11\linewidth} >{\raggedright\arraybackslash}p{0.22\linewidth} >{\raggedright\arraybackslash}p{0.2\linewidth} >{\raggedright\arraybackslash}p{0.25\linewidth}} % 0.23 + 0.11 + 0.22 + 0.2 + 0.25 = 0.33 + 0.67 = 1.0
+      Timeline & Languages & Libraries & Tools & Application\\
+      \hline
+      Continuously & (Lisp) & None & \href{https://www.spacemacs.org/}{Emacs}, \href{https://orgmode.org/}{Org-mode} & Note-taking\\
+      2020-2021 Thesis & Python & \href{https://aiida.net}{AiiDA}, \href{https://judft.de}{JuKKR} (DFT code), \href{https://wiki.fysik.dtu.dk/ase/}{ASE}, \href{https://pymatgen.org/}{Pymatgen}, \href{https://docs.bokeh.org}{Bokeh}, \href{https://scikit-learn.org/}{Scikit-learn}, \href{https://singroup.github.io/dscribe/}{DScribe} & GitHub/GitLab CI/CD, \href{https://readthedocs.org/}{RTD}, \href{https://python-poetry.org}{Poetry}, \href{https://docs.pytest.org}{Pytest}, \href{https://slurm.schedmd.com/}{Slurm}, \href{https://www.gnu.org/software/screen/}{Screen} & Machine learning potentials for DFT\\
+      2017-2020 Coursework & Python, C & \href{https://www.tensorflow.org/}{Tensorflow}, \href{https://keras.io}{Keras}, \href{https://www.mpi-forum.org/}{MPI}, \href{https://www.openmp.org/}{OpenMP}, \href{https://developer.nvidia.com/cuda-zone}{CUDA} & \href{https://colab.research.google.com/}{Google Colaboratory}, \href{https://www.comet.ml/}{Comet.ml}, \href{https://www.mathworks.com}{MATLAB}, \href{https://vtk.org/}{Vtk} & Neural networks, Numerical solvers\\
+      \makecell[l]{2019 \\ Student life} & Shell, JS & \href{https://www.meteor.com/}{Meteor} & \href{https://www.mongodb.com/}{MongoDB}, \href{https://pandoc.org}{Pandoc}, Wiki, (\href{https://www.docker.com/}{Docker}) & Event organizer, student Wiki\\
+      \makecell[l]{2018 \\ Student \\ project} & \SymboCpp{}17 & Template Programming / OO, \href{https://www.qt.io/}{Qt5}, \href{https://github.com/google/googletest}{Googletest} & \href{https://cmake.org/}{CMake}, Git, \href{https://texample.net/tikz/}{TiKZ}, \href{https://www.jetbrains.com/clion/}{CLion} & Treemapping, \href{https://www.scalasca.org/software/cube-4.x/}{Cube} (performance explorer)\\
+      \makecell[l]{2018 \\Student \\ project} & Python & Introspection / OO, \href{https://github.com/jupyter-widgets/ipywidgets}{Ipywidgets} (dashboarding), \href{https://www.h5py.org/}{h5py}, \href{https://matplotlib.org/}{Matplotlib}, \href{https://docs.python.org/3/library/tk.html}{Tkinter} & \href{https://jupyter.org/}{Jupyter} & Bandstructure visualizer\\
+      2017-2018 Work & Python & \href{https://www.hdfgroup.org/solutions/hdf5/}{HDF5} (container), \href{https://numpy.org}{Numpy}, \href{https://pandas.pydata.org/}{Pandas}, \href{https://www.w3.org/OWL/}{RDF/OWL} (ontology) & \href{https://anaconda.org/conda-forge/}{Conda}, \href{https://protege.stanford.edu/}{Protégé}, \href{https://www.jetbrains.com/pycharm/}{PyCharm} & \href{https://micress.rwth-aachen.de/}{MICRESS} (Microstructure simulation), \href{aixvipmap.de}{AiXViPMaP} (ICME platform)\\
+      2014-2017 Apprentice & Java8 & DI / MVVM (design Patterns), \href{https://openjfx.io/}{JavaFX} (GUI), \href{https://hibernate.org/}{Hibernate} (ORM), \href{https://www.w3.org/TR/xml/}{XML}, UML, Batch script & \href{https://maven.apache.org/}{Maven}, \href{https://gradle.org/}{Gradle}, \href{https://www.apachefriends.org/index.html}{Xampp}, \href{https://subversion.apache.org/}{SVN}, \href{https://trello.com/}{Trello}, \href{https://www.putty.org/}{Putty}, \href{https://cygwin.com/}{Cygwin}, \href{https://www.eclipse.org/}{Eclipse}, \href{https://netbeans.apache.org//}{Netbeans}, Windows, \LaTeX{}, Office & DB Manager, \href{https://www.plm.automation.siemens.com/global/en/products/simcenter/STAR-CCM.html}{Star-CCM+} (Fluid dynamics)\\
+      2014-2017 Coursework & \SymboCpp{}, JS & JQuery, LAMMPS & \LaTeX{}, VMD & Course projects, MD simulations\\
+      Before 2014 & Shell, \SymboCpp{} & None & \href{https://www.gromacs.org/}{GROMACS}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://www.gimp.org}{Gimp}, \href{https://kdenlive.org}{Kdenlive} & Art\\
+    \end{tabular}
+  }
+\end{center}
+
+
+
+% \begin{tabular}{p{0.35\linewidth} | p{0.6\linewidth}}
+%   Column 1  & Column2 \\ \hline
+%   This text will be wrapped & Some more text \\
+%   Some text here & This text maybe wrapped here if its tooooo long \\
+% \end{tabular}
+% \caption{Caption}
+% \label{tab:my_label}
+
+
+% \pagebreak
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
 
 %\section{Pflege- und Assistenzerfahrung}
 %\cvline{Pflege}{In den letzten 5 Jahren unterstützte ich meine Eltern bei der Pflege meines Großvaters und meiner Großtante zuhause. In dieser Zeit waren beide auf einen Rollstuhl angewiesen.}
@@ -152,17 +201,17 @@
 \section{Personal Interests}
 
 {\setstretch{0.6}
-  \cvline{Community}{2018-2020 Dorm speaker of the student dorm/association \href{https://www.oph.rwth-aachen.de/wiki/index.php/Hauptseite}{Otto-Petersen-Haus
+  \cvline{Community}{2017-2020 Spokesperson of the student dorm \href{https://www.oph.rwth-aachen.de/wiki/index.php/Hauptseite}{Otto-Petersen-Haus
       e.V.}}
-  \cvline{service}{with 200 residents/members. The self-administration owns and
-    manages the house network, washing machines, various working groups, and
-    helps to organize two established events which are among the biggest student-organised events Aachen.
-    Dorm speakers govern the administration and serve as main contact person to
-    everyone in- and outside the dorm. My main achievement in this office was the transformation of the self-administration into a registered,
+  \cvline{service}{with 200 residents/members. The self-administration manages
+    the technical infrastructure owns and working groups within the dorm and
+    organizes events, two of which are among the biggest student-organised
+    events in Aachen. My main achievement in this office was the transformation of the self-administration into a registered,
     charitable association.}
   \cvline{Public Outreach}{2015 Active member of the Aachen-based student
     association Energybirds e.V. The association advances public understanding of energy technology.}
-\cvline{Music}{1999-2015 Conductor, educator and playing member in various orchestras, bands and ensembles.}
+\cvline{Music}{1999-2015 Conductor, educator and playing member in various
+  orchestras, bands and ensembles across Europe, though mainly in Germany.}
 
 }
 %\cvline{hobby 2}{\small Description}
