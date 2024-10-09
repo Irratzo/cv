@@ -1,0 +1,141 @@
+# ################################################################################
+# ################################################################################
+# Description: org config to be shared across different org files.
+#
+# Usage: Place this in your org file header.
+#
+# #+SETUPFILE: ../.config.org
+# #+TITLE: Your title
+# #+SUBTITLE:
+# #+DATE: <2023-03-08 Wed>
+# #+ARCHIVE: your-filename_archive.org::
+# #+OPTIONS: audo-id:t
+#
+# ################################################################################
+#
+# Side notes.
+# ##########
+#
+#
+# Org-mode Export LaTeX Customization Notes:
+# - Interpret 'bla_bla' as LaTeX Math bla subscript bla: #+OPTIONS ^:t. Interpret literally bla_bla: ^:nil.
+# - org export: turn off heading -> section numbering: #+OPTIONS: num:nil
+# - org export: change list numbering to alphabetical, sources:
+#   - https://orgmode.org/manual/Plain-lists-in-LaTeX-export.html
+#   - https://tex.stackexchange.com/a/129960
+#   - must be inserted before each list:
+#     #+ATTR_LATEX: :environment enumerate
+#     #+ATTR_LATEX: :options [label=\alph*)]
+# - allow org to recognize alphabetical lists a)...: M-x customize-variable org-list-allow-alphabetical
+#
+#
+#
+# # In Emacs org-mode: before exporting, comment this out START
+# ;; Local Variables:
+# ;; ispell-check-comments: exclusive
+# ;; ispell-local-dictionary: "english"
+# ;; End:
+# # In Emacs org-mode: before exporting, comment this out FINISH
+# ################################################################################
+# ################################################################################
+
+
+
+# -----------------------
+# General Export Options:
+#+OPTIONS: ^:nil ':nil *:t -:t ::t <:t H:3 \n:nil arch:headline
+#+OPTIONS: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: f:t inline:t p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:t title:t todo:t |:t
+
+#+OPTIONS: author:Johannes Wasmer
+#+OPTIONS: email:johannes.wasmer@gmail.com
+#+AUTHOR: Johannes Wasmer
+# #+EMAIL: johannes.wasmer@gmail.com
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 28.2 (Org mode 9.6.1)
+
+
+# for org for web (eg gitlab, github): num:nil, toc:nil. using custom Table of Contents below.
+# for tex/pdf export, temporarily: num:t, toc:t. replace * Table of Contents -> * COMMENT Table of Contents.
+#+OPTIONS: num:nil
+# t or nil: disable export latex section numbering for org headings
+#+OPTIONS: toc:nil
+# t or nil: no table of contents (doesn't work if num:nil)
+
+# ---------------------
+# LaTeX Export Options:
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER: \usepackage[english]{babel}
+#+LATEX_HEADER: \usepackage[top=0.5in,bottom=0.5in,left=1in,right=1in,includeheadfoot]{geometry} % wider page; load BEFORE fancyhdr
+#+LATEX_HEADER: \usepackage[inline]{enumitem} % for customization of itemize, enumerate envs
+#+LATEX_HEADER: \usepackage{color}
+#+LATEX_HEADER: \usepackage{bm} % bold math. prefer \bm over \mathbf. also works with Greek symbols.
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{siunitx} % SI units
+# #+LATEX_HEADER: \usepackage{mchem} % chemical formulae % commented out, crashed org-latex-preview 2023-09-24
+#+LATEX_HEADER: \usepackage{braket} % dirac braket notation, prefer over physics package https://tex.stackexchange.com/a/214731
+#+LATEX_HEADER: % override 'too deeply nested error'
+#+LATEX_HEADER: % reference: https://stackoverflow.com/a/13120787
+#+LATEX_HEADER: \usepackage{unicode-math}
+#+LATEX_HEADER: % unicode-math for math double prime etc. ref. https://tex.stackexchange.com/a/210300
+#+LATEX_HEADER: % note: unicode-math only works with unicode-LaTeX compiler (XeTeX, LuaTeX), pdflatex won't work.
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \setlistdepth{9}
+#+LATEX_HEADER: \setlist[itemize,1]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,2]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,3]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,4]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,5]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,6]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,7]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,8]{label=$\bullet$}
+#+LATEX_HEADER: \setlist[itemize,9]{label=$\bullet$}
+#+LATEX_HEADER: \renewlist{itemize}{itemize}{9}
+#+LATEX_HEADER:
+#+LATEX_HEADER_EXTRA:
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LATEX_COMPILER: pdflatex
+
+# auto-id: get export-safe org-mode headline IDs
+# References:
+# - web: https://writequit.org/articles/emacs-org-mode-generate-ids.html
+# - local:
+#   - Emacs Config Notes > get export-safe org-mode headline IDs
+#   - emacs dotfile > =JW 220419 org-mode headlines CUSTOM_ID=
+# Notes:
+# - this property is not inherited through #+SETUPFILE: ...
+#+OPTIONS: auto-id:t
+
+# --------------------
+# Agenda Config.
+# Notes:
+# - tags:
+#   - :TOC: automatic table of contents generation via https://github.com/snosov1/toc-org.
+#     (Note: this is for org/markdown etc. For latex/html export, prefer #+OPTIONS: toc:t.)
+
+# TODO keywords default.
+#+TODO: TODO(1) NEXT(2) DOING(3) WAITING(4) ONHOLD(5) POSTPONED(6) SHELVED(7) | DONE(0) MOVED(8) ABANDONED(9) FAIL
+
+# # Tags default.
+# #+TAGS: URGENT(0) PRIO1(1) PRIO2(2) PRIO3(3) ADMIN(a) CODING(c) WRITING(w) TOC(t)
+
+# Tags phd-project-wasmer main
+#+TAGS: [ org : TOC(t) ]
+#+TAGS: [ project : wasmer judft collab rse ]
+#+TAGS: [ wasmer : theo data code rep ops doc mgmt side ]
+#+TAGS: [ theo : phys dft aml ml ]
+#+TAGS: [ data : sidb(1) didb(2) aii ]
+#+TAGS: [ code : jij(3) vimp(4) dsm(5) ]
+#+TAGS: [ ops : pack man it ]
+#+TAGS: [ doc : notes(6) pres(7) prom pub(8) ref dsm(9) ]
+#+TAGS: [ judft : jutools kkr spirit fleur masci iffaii ]
+#+TAGS: [ collab : pis tip aidas casus cosmo daemon tcd contact ]
+#+TAGS: [ admin : pgi helm fzj rwth fund ]
+#+TAGS: [ pgi : office teach ]
+#+TAGS: [ event : meet conf sem tut ]
