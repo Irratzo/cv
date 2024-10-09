@@ -20,7 +20,8 @@ Notes on CV setup, maintenance and updates.
 - [[#up][Up]]
 - [[#description][Description]]
 - [[#202x-xx-xx-latex-academic-v10][202x-xx-xx latex-academic v1.0]]
-- [[#2024-10-09-linkedin-v10][2024-10-09 linkedin v1.0]]
+- [[#202x-xx-xx-try-external-linkedin-cv-exporters-0][202x-xx-xx Try external LinkedIn CV exporters]]
+- [[#2024-10-09-linkedin-export-v10-66][2024-10-09 linkedin-export v1.0]]
 - [[#2024-10-09-latex-simple-v14-24][2024-10-09 latex-simple v1.4]]
 - [[#2023-02-08-latex-simple-v13][2023-02-08 latex-simple v1.3]]
 - [[#2022-01-19-latex-simple-v12][2022-01-19 latex-simple v1.2]]
@@ -87,14 +88,25 @@ Some tips and templates.
   - [[https://raphink.info/][this is cool]]
   - some academic cvs on github, simple [[https://github.com/Mamunia/cv][1]], [[https://github.com/arasgungore/arasgungore-CV][2]]; fancy [[https://github.com/alessant/ALECS---Another-LatEx-Cv-for-Scientists][2]]
 
-* 2024-10-09 linkedin v1.0
+* TODO 202x-xx-xx Try external LinkedIn CV exporters [0/]
+:PROPERTIES:
+:CUSTOM_ID: h-93B0DB3D-E167-48AE-9F1F-A9EBF4CEEAB1
+:END:
+Alternatives for LinkedIn CV export (not tried).
+
+- [ ] [[https://www.kickresume.com/en/linkedin-resume-builder/][kickresume.com]]
+- [ ] [[https://cvonline.me/en/generate-cv-from-linkedin][cvonline.me]]
+- [ ] [[https://enhancv.com/linkedin-resume-builder/][enhancv.com]]
+- [ ] [[https://www.resumonk.com/resume-builder/help/import-from-linkedin][resumonk.com]]
+- [ ] [[https://www.rezi.ai/linkedin-resume-builder][rezi.ai]]
+- [ ] [[https://www.visualcv.com/linkedin-resume-builder/][visualcv.com]]
+* 2024-10-09 linkedin-export v1.0 [6/6]
 :PROPERTIES:
 :CUSTOM_ID: h-F5195136-D3A1-4D36-A421-8343C563F735
 :END:
 First, need to restructure this repo to account for different CV variants.
 
-- [ ] Move =src/= to =variants/latex-simple/=.
-- [ ]
+- [X] Move =src/= to =variants/latex-simple/=.
 
 On LinkedIn profile.
 
@@ -102,7 +114,7 @@ On LinkedIn profile.
 - [X] Update profile link in other web presences (fzj, github, wonderlink)
 - [X] Add section Volunteering, copy from CV "Personal Interests"
 - [X] Generate PDF via profile - Resources - Save to PDF.
-- [ ] Save in =variants/linkedin/=.
+- [X] Save in =variants/linkedin-export/=.
 * 2024-10-09 latex-simple v1.4 [2/4]
 :PROPERTIES:
 :CUSTOM_ID: h-4C2AF312-52DA-4B2D-A857-5B648BD2297E
