@@ -1,0 +1,21 @@
+#+SETUPFILE: ../.config.org
+#+TITLE: CV Journal
+#+SUBTITLE:
+#+DATE: <2020-10-01 Thu>
+#+ARCHIVE: journal_archive.org::
+#+OPTIONS: auto-id:t
+* [[file:../README.org][Up]]
+:PROPERTIES:
+:CUSTOM_ID: h-0B2F0498-B19B-48DB-AC69-9D239FC283DB
+:END:
+* Description
+:PROPERTIES:
+:CUSTOM_ID: h-98DFD5C7-BABD-4AE0-8AD5-0B1871DBE593
+:END:
+Notes on CV setup, maintenance and updates.
+* Table of Contents                                                     :TOC_2_gh:noexport:
+:PROPERTIES:
+:CUSTOM_ID: h-AD6F3DB3-77DE-41B5-8124-F61D199337E9
+:END:
+- [[#up][Up]]
+- [[#description][Description]]
