@@ -15,8 +15,8 @@
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
-\usepackage[ngerman]{babel}   % deutschsprachige Bezuege, vor babel zu
-% laden
+% \usepackage[english,ngerman]{babel}          % deutschsprachige Bezuege
+\usepackage[english]{babel}
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -25,10 +25,13 @@
                                 %wrap section lines in {\setstretch{0.6} ... }
                                 %insert empty cvline/cventry/... between
                                 %paragraphs
+
 \usepackage{makecell}           %for manual linebreaks within table cells,
                                 % reference:
                                 % https://tex.stackexchange.com/a/176780
+
 \usepackage{array}
+\usepackage{csquotes}           % language-aware quotes: \enquote{}
 
 % redefine moderncv section bar color, called 'color1'.
 % reference: https://stackoverflow.com/a/64538448/8116031
@@ -78,31 +81,32 @@
 \section{Education}
 
 \cventry{2017/10 --
-  2021/10}{\href{https://www.aices.rwth-aachen.de/en/academics/masters-program-simulation-sciences}{Simulation
-    Sciences MSc}}{RWTH}{Aachen}{}{Individual emphasis on data-driven materials
-  science. Thesis supervisor
+  2022/03}{\href{https://www.aices.rwth-aachen.de/en/academics/masters-program-simulation-sciences}{Simulation
+    Sciences MSc}}{\href{https://www.rwth-aachen.de}{RWTH}}{Aachen}{\textit{Grade: 2.0 (January, 2022)}}{Individual emphasis on data-driven materials
+  science. Thesis:
+  \enquote{\href{https://www.fz-juelich.de/pgi/pgi-1/EN/Leistungen/MasterDiplomDr/_node.html}{Development
+      of a surrogate machine learning model for the acceleration of density
+      functional calculations with the Korringa-Kohn-Rostoker method}},
+  supervised by
   \href{https://www.fz-juelich.de/SharedDocs/Personen/PGI/PGI-1/EN/Bluegel_S.html}{Prof.
-    Dr. Stefan Blügel of PGI-1/IAS-1} at Forschungszentrum Jülich. Thesis:
-  '\href{https://www.fz-juelich.de/pgi/pgi-1/EN/Leistungen/MasterDiplomDr/_node.html}{Development
-    of a surrogate machine learning model for the acceleration of density
-    functional calculations with the Korringa-Kohn-Rostoker method}'.}
+    Dr. Stefan Blügel of PGI-1/IAS-1} at Forschungszentrum Jülich.}
 
 \cventry{2014/09 -- 2017/10}
 {\href{https://www.fh-aachen.de/en/course-of-study/angewandte-mathematik-und-informatik-bsc/}{Scientific
-    Programming BSc}}{\href{https://www.fh-aachen.de/}{FH Aachen}}{Jülich/Aachen}{\textit{Grade: 2,1}}
+    Programming BSc}}{\href{https://www.fh-aachen.de/}{FH Aachen}}{Jülich/Aachen}{\textit{Grade: 2.1}}
 {Dual degree program, combined with vocational training
-  `\href{http://www.rwth-aachen.de/cms/root/Die-RWTH/Jobs-Ausbildung/Berufsausbildung/Ausbildungsberufe/~vsa/Math-techn-Softwareentwickler/?lidx=1}{Mathematical-technical
-    software development}' (\glqq{}Mathematisch-Technischer Softwareentwickler
-  (MATSE)\grqq{}) at the independent research association
-  \href{http://www.access.rwth-aachen.de/}{Access e.V.}, Aachen. Thesis:
-  `Conversion to JavaFX and extension by a statistical data analysis tool of a
-  simulation manager application' (MySQL, Hibernate, Java 8).}
+  \enquote{\href{http://www.rwth-aachen.de/cms/root/Die-RWTH/Jobs-Ausbildung/Berufsausbildung/Ausbildungsberufe/~vsa/Math-techn-Softwareentwickler/?lidx=1}{Mathematical-technical
+    software development}} (\enquote{Mathematisch-Technischer Softwareentwickler
+  (MATSE)}) at the independent research association
+\href{https://access-technology.de/}{Access e.V.}, Aachen. Thesis:
+  \enquote{Conversion to JavaFX and extension by a statistical data analysis tool of a
+  simulation manager application} (MySQL, Hibernate, Java 8).}
 
 
 \cventry{2004--2014}{Various}{\href{https://www.tum.de/}{TU München}, \href{https://www.ethz.ch/de.html}{ETH Zürich}}{}{\textit{without final degree}}
 {Studies in natural, materials and computational sciences. No degree due to a depression diagnosed and treated in 2013/2014.}
 \cventry{1995--2004}{Abitur}{Hochrhein-Gymnasium}{Waldshut, BW,
-  Germany}{\textit{Grade 2,1 - `good'}}{University entrance qualification (\glqq{}Allgemeine Hochschulreife\grqq{}).}
+  Germany}{\textit{Grade 2.1 - \enquote{good}}}{University entrance qualification (\enquote{Allgemeine Hochschulreife}).}
 
 \section{Work Experience}
 
@@ -115,12 +119,16 @@
   \href{https://www.vi-hps.org/tools/cube.html}{Cube}
   for parallel programs (\SymboCpp{} 14, Qt 5).}
 
-\cventry{2017/10 -- 2018/09}{Sudent
-  assistant}{\href{http://www.access.rwth-aachen.de/}{Access e.V.}}{Aachen}{}{1)
+\cventry{2017/10 -- 2018/09}{Student
+  assistant}{\href{https://access-technology.de}{Access e.V.}}{Aachen}{}{1)
   Development of converters as part of a HDF5 data exchange format for the
-  project \href{aixvipmap.de}{Aachen Virtual Platform for Materials Processing} (Python3).}{}
+  project \href{aixvipmap.de}{Aachen Virtual Platform for Materials Processing} (Python).}{}
 
-\cventry{2012/03--2014/08}{Freelance journalist}{\href{http://www.suedkurier-medienhaus.de/}{Südkurier GmbH Medienhaus}}{Bad Säckingen}{}{{\small At \href{https://www.suedkurier.de/services/info/Kontakt-Bad-Saeckingen;art1015385,4792765}{city desk Bad Säckingen}.}}{}
+\cventry{2012/03--2014/08}{Freelance
+  journalist}{\href{http://www.suedkurier-medienhaus.de/}{Südkurier GmbH
+    Medienhaus}}{Bad Säckingen}{}{{\small At
+    \href{https://www.suedkurier.de/services/info/Kontakt-Bad-Saeckingen;art1015385,4792765}{city
+      desk Bad Säckingen}.}}{}
 
 % \cventry{2003--2012}{Production assistant}{Franke Personalservice
 % e.K.}{Laufenburg}{}{Holiday jobs in various companies.}{}
@@ -166,8 +174,8 @@
       \makecell[l]{2019 \\ Student life} & Shell, JS & \href{https://www.meteor.com/}{Meteor} & \href{https://www.mongodb.com/}{MongoDB}, \href{https://pandoc.org}{Pandoc}, Wiki, (\href{https://www.docker.com/}{Docker}) & Event organizer, student Wiki\\
       \makecell[l]{2018 \\ Student \\ project} & \SymboCpp{}17 & Template Programming / OO, \href{https://www.qt.io/}{Qt5}, \href{https://github.com/google/googletest}{Googletest} & \href{https://cmake.org/}{CMake}, Git, \href{https://texample.net/tikz/}{TiKZ}, \href{https://www.jetbrains.com/clion/}{CLion} & Treemapping, \href{https://www.scalasca.org/software/cube-4.x/}{Cube} (performance explorer)\\
       \makecell[l]{2018 \\Student \\ project} & Python & Introspection / OO, \href{https://github.com/jupyter-widgets/ipywidgets}{Ipywidgets} (dashboarding), \href{https://www.h5py.org/}{h5py}, \href{https://matplotlib.org/}{Matplotlib}, \href{https://docs.python.org/3/library/tk.html}{Tkinter} & \href{https://jupyter.org/}{Jupyter} & Bandstructure visualizer\\
-      2017-2018 Work & Python & \href{https://www.hdfgroup.org/solutions/hdf5/}{HDF5} (container), \href{https://numpy.org}{Numpy}, \href{https://pandas.pydata.org/}{Pandas}, \href{https://www.w3.org/OWL/}{RDF/OWL} (ontology) & \href{https://anaconda.org/conda-forge/}{Conda}, \href{https://protege.stanford.edu/}{Protégé}, \href{https://www.jetbrains.com/pycharm/}{PyCharm} & \href{https://micress.rwth-aachen.de/}{MICRESS} (Microstructure simulation), \href{aixvipmap.de}{AiXViPMaP} (ICME platform)\\
-      2014-2017 Apprentice & Java8 & DI / MVVM (design Patterns), \href{https://openjfx.io/}{JavaFX} (GUI), \href{https://hibernate.org/}{Hibernate} (ORM), \href{https://www.w3.org/TR/xml/}{XML}, UML, Batch script & \href{https://maven.apache.org/}{Maven}, \href{https://gradle.org/}{Gradle}, \href{https://www.apachefriends.org/index.html}{Xampp}, \href{https://subversion.apache.org/}{SVN}, \href{https://trello.com/}{Trello}, \href{https://www.putty.org/}{Putty}, \href{https://cygwin.com/}{Cygwin}, \href{https://www.eclipse.org/}{Eclipse}, \href{https://netbeans.apache.org//}{Netbeans}, Windows, \LaTeX{}, Office & DB Manager, \href{https://www.plm.automation.siemens.com/global/en/products/simcenter/STAR-CCM.html}{Star-CCM+} (Fluid dynamics)\\
+      2017-2018 Work & Python & \href{https://www.hdfgroup.org/solutions/hdf5/}{HDF5} (file format), \href{https://numpy.org}{Numpy}, \href{https://pandas.pydata.org/}{Pandas}, \href{https://www.w3.org/OWL/}{RDF/OWL} (ontology) & \href{https://anaconda.org/conda-forge/}{Conda}, \href{https://protege.stanford.edu/}{Protégé}, \href{https://www.jetbrains.com/pycharm/}{PyCharm} & \href{https://micress.rwth-aachen.de/}{MICRESS} (Microstructure simulation), \href{aixvipmap.de}{AiXViPMaP} (ICME platform)\\
+      2014-2017 Apprentice & Java 8 & DI / MVVM (design patterns), \href{https://openjfx.io/}{JavaFX} (GUI), \href{https://hibernate.org/}{Hibernate} (ORM), \href{https://www.w3.org/TR/xml/}{XML}, UML, Batch script & \href{https://maven.apache.org/}{Maven}, \href{https://gradle.org/}{Gradle}, \href{https://www.apachefriends.org/index.html}{Xampp}, \href{https://subversion.apache.org/}{SVN}, \href{https://trello.com/}{Trello}, \href{https://www.putty.org/}{Putty}, \href{https://cygwin.com/}{Cygwin}, \href{https://www.eclipse.org/}{Eclipse}, \href{https://netbeans.apache.org//}{Netbeans}, Windows, \LaTeX{}, Office & DB Manager, \href{https://www.plm.automation.siemens.com/global/en/products/simcenter/STAR-CCM.html}{Star-CCM+} (Fluid dynamics)\\
       2014-2017 Coursework & \SymboCpp{}, JS & JQuery, LAMMPS & \LaTeX{}, VMD & Course projects, MD simulations\\
       Before 2014 & Shell, \SymboCpp{} & None & \href{https://www.gromacs.org/}{GROMACS}, \href{https://www.audacityteam.org/}{Audacity}, \href{https://www.gimp.org}{Gimp}, \href{https://kdenlive.org}{Kdenlive} & Art\\
     \end{tabular}
@@ -201,18 +209,20 @@
 \section{Personal Interests}
 
 {\setstretch{0.6}
-  \cvline{Community}{2017-2020 Spokesperson of the student dorm \href{https://www.oph.rwth-aachen.de/wiki/index.php/Hauptseite}{Otto-Petersen-Haus
+  \cvline{Community}{2017-2020 Spokesperson of the
+    student dorm
+    \href{https://www.oph.rwth-aachen.de/wiki/index.php/Hauptseite}{Otto-Petersen-Haus
       e.V.}}
-  \cvline{service}{with 200 residents/members. The self-administration manages
-    the technical infrastructure owns and working groups within the dorm and
+  \cvline{service}{with 200 members. The self-administration owns the
+    technical infrastructure, maintains working groups within the dorm and
     organizes events, two of which are among the biggest student-organised
     events in Aachen. My main achievement in this office was the transformation of the self-administration into a registered,
     charitable association.}
   \cvline{Public Outreach}{2015 Active member of the Aachen-based student
-    association Energybirds e.V. The association advances public understanding of energy technology.}
+    association \href{https://www.energybirds.org/}{Energybirds e.V.}. Advancing public understanding
+    of energy technology and policy.}
 \cvline{Music}{1999-2015 Conductor, educator and playing member in various
   orchestras, bands and ensembles across Europe, though mainly in Germany.}
-
 }
 %\cvline{hobby 2}{\small Description}
 %\cvline{hobby 3}{\small Description}

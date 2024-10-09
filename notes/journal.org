@@ -19,10 +19,18 @@ Notes on CV setup, maintenance and updates.
 :END:
 - [[#up][Up]]
 - [[#description][Description]]
+- [[#2022-01-19-version-v12][2022-01-19 Version v1.2]]
 - [[#2021-06-15-version-v11][2021-06-15 Version v1.1]]
   - [[#update-section-skills-22][Update section Skills]]
 - [[#2020-10-01-version-v10][2020-10-01 Version v1.0]]
 
+* 2022-01-19 Version v1.2
+:PROPERTIES:
+:CUSTOM_ID: h-78AB840B-E15B-4E9D-BA5A-6F286B139948
+:END:
+Note on optional inclusion of signature. The image (file =signature2.png=) and
+compiled PDF with signature is not stored in this repository, but locally, in
+=../repo-name-local/src=. Compile there, if needed.
 * 2021-06-15 Version v1.1
 :PROPERTIES:
 :CUSTOM_ID: h-1E954732-BF3E-4FF0-9477-A3B1E14D2949
